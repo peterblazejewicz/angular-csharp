@@ -9,17 +9,17 @@
       <ul class='navbar-nav'>
         <li class="nav-item" [routerLinkActive]='["active"]' [routerLinkActiveOptions]='{ exact: true }'>
           <a class="nav-link text-truncate" [routerLink]='["/"]' (click)='collapse()'>
-            <span class='glyphicon glyphicon-home'></span> Home
+            <i class="fas fa-home"></i> Home
           </a>
         </li>
         <li class="nav-item" [routerLinkActive]='["active"]'>
           <a class="nav-link text-truncate" [routerLink]='["/counter"]' (click)='collapse()'>
-            <span class='glyphicon glyphicon-education'></span> Counter
+            <i class="fas fa-graduation-cap"></i> Counter
           </a>
         </li>
         <li class="nav-item" [routerLinkActive]='["active"]'>
           <a class="nav-link text-truncate" [routerLink]='["/fetch-data"]' (click)='collapse()'>
-            <span class='glyphicon glyphicon-th-list'></span> Fetch data
+            <i class="fas fa-list"></i> Fetch data
           </a>
         </li>
       </ul>
