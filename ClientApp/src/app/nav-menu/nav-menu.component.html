@@ -1,12 +1,12 @@
 <div class='main-nav'>
-  <nav class='navbar navbar-dark flex-md-column justify-content-md-start bg-dark'>
-    <a class='navbar-brand' [routerLink]='["/"]'>angular_csharp</a>
+  <nav class='navbar navbar-dark flex-md-column justify-content-md-start align-items-start bg-dark'>
+    <a class='navbar-brand' [routerLink]='["/"]'>Angular CSharp</a>
     <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarText"
       aria-label="Toggle navigation" [attr.aria-expanded]='isExpanded' (click)='toggle()'>
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class='collapse navbar-collapse w-100' [ngClass]='{ "in": isExpanded }'>
-      <ul class='navbar-nav mr-auto'>
+    <div class='collapse navbar-collapse w-100' [ngClass]='{ "show": isExpanded }'>
+      <ul class='navbar-nav'>
         <li class="nav-item" [routerLinkActive]='["active"]' [routerLinkActiveOptions]='{ exact: true }'>
           <a class="nav-link text-truncate" [routerLink]='["/"]' (click)='collapse()'>
             <span class='glyphicon glyphicon-home'></span> Home

@@ -19,10 +19,15 @@ li.active a:focus {
     z-index: 1;
 }
 
+.navbar-collapse {
+  padding-top: .5rem;
+}
+
 @media (min-width: 768px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
         height: 100%;
+        bottom: 0;
         width: calc(25% - 20px);
     }
     .navbar {
@@ -37,7 +42,7 @@ li.active a:focus {
 
     .navbar li {
         font-size: 15px;
-        margin: 6px;
+        margin: 6px 0;
     }
     .navbar li a {
         padding: 10px 16px;
